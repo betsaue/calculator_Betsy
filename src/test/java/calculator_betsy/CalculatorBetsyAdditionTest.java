@@ -4,9 +4,8 @@ import static org.junit.Assert.*;
 
 import org.junit.*;
 
-public class CalculatorBetsyAddSubMulDiv {
-	double a = 0.0;
-	double b = 0.0;
+public class CalculatorBetsyAdditionTest {
+	
 	Calculator cal = new Calculator();
 
 	@Test
@@ -27,11 +26,11 @@ public class CalculatorBetsyAddSubMulDiv {
 	
 	@Test
 	public void addtest4() {
-		assertEquals("Unexepected error during addition", -0, cal.add(-0,0), 0.0d );
+		assertEquals("Unexepected error during addition", 0, cal.add(-0,0), 0.0d );
 	}
 	
 	@Test
 	public void addtest5() {
-		assertEquals("Unexepected error during addition", 0, cal.add(-0,0), 0.0d );
+		assertEquals("Unexepected error during addition", 334.22, cal.add(100.99,233.233), 0.010d );
 	}
 }

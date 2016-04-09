@@ -9,33 +9,33 @@ public class CalculatorBetsyDivisionTest {
 	Calculator cal = new Calculator();
 
 	@Test
-	public void multiplytest1() {
+	public void divisiontest1() {
 		assertEquals("Unexepected error during division", 1, cal.div(2.2,2.2), 0.001d );
 		
 	}
 
 	@Test
-	public void multiplytest2() {
+	public void divisiontest2() {
 		assertEquals("Unexepected error during division", -1, cal.div(-2.2,2.2), 0.001d );
 	}
 	
 	@Test
-	public void multiplytest3() {
+	public void divisiontest3() {
 		assertEquals("Unexepected error during division", 1 , cal.div(-2.2,-2.2), 0.01d );
 	}
 	
 	@Test
-	public void multiplytest4() {
+	public void divisiontest4() {
 		assertEquals("Unexepected error during division", 0, cal.div(-0,45.5), 0.0d );
 	}
 	
 	@Test
-	public void multiplytest5() {
-		assertEquals("Unexepected error during division", ∞ , cal.div(45.5,0.0), 0.0d );
+	public void divisiontest5() {
+		assertEquals("Unexepected error during division", (45.5/0.0) , cal.div(45.5,0.0), 0.0d );
 	}
 	
 	@Test
-	public void multiplytest6() {
+	public void divisiontest6() {
 		assertEquals("Unexepected error during division", 0.433, cal.div(100.99,233.233), 0.001d );
 	}
 
